@@ -3,7 +3,7 @@ import { z } from 'zod'
 
 const formSchema = z.object({
   email: z.string().email('Некорректный емаил'),
-  message: z.string().min(5, 'Сообщение должно содеражть минимум 5 символов')
+  // message: z.string().min(5, 'Сообщение должно содеражть минимум 5 символов')
 })
 
 export const validateForm = (req: Request, res: Response, next: NextFunction) => {

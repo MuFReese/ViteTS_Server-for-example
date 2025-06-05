@@ -1,5 +1,6 @@
+
+
 export async function submitForm(email: string, message: string): Promise<void> {
-  console.log(email, message)
   try {
     const response = await fetch('http://localhost:3001/api/submit', {
       method: 'POST',
@@ -18,8 +19,11 @@ export async function submitForm(email: string, message: string): Promise<void> 
     }
 
   } catch (error) {
-    console.error('Ошибка:', error)
-    console.log(email, message)
-    throw error
+    if (error instanceof Error) {
+      console.error('Ошибка:', error)
+      throw error
+    } else (
+      console.log('Неизвестная ошибка', )
+    )
   }
 }

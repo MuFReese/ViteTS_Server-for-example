@@ -1,9 +1,6 @@
 import pool from "../db";
+import { IFormData } from "@/types";
 
-interface IFormData {
-  email: string
-  message: string
-}
 
 export const saveFormData = async (data: IFormData) => {
   const qeury = `
