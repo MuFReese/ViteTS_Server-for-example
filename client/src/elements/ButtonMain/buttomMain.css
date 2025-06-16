@@ -1,0 +1,26 @@
+.buttonMain{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  border: 2px solid black;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  box-shadow: 0 2px 0 black;
+  padding: 0.3rem 1.5rem;
+  transition: all 0.2s;
+}
+
+.buttonMain:hover{
+  background-color: green ;
+  color: white;
+}
+
+.buttonMain:active{
+  transform: translateY(2px);
+  box-shadow: 0 0 0;
+}
+
+.bold{
+  font-weight: 700;
+}
+

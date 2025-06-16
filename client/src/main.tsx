@@ -1,15 +1,23 @@
-import { contactMe } from './components/modal.contactMe'
-import { DataMainUser } from './data'
+
+import  DataMainUser  from './components/MainInfo/MainInfo'
 
 import React from 'react'
 import ReactDom from 'react-dom/client'
-import './style/modal.css'
-import './style/normalize.css'
-import './style/style.css'
+import './normalize.css'
+import ErrorBoundary from './components/ErrorBoundary'
+
 
 
 ReactDom.createRoot(document.querySelector('#app')!).render(
-  <React.StrictMode>
-    <DataMainUser/>
-  </React.StrictMode>
+  <Main/>
 )
+
+function Main() {
+
+
+  return (
+    <ErrorBoundary>
+      <DataMainUser/>
+    </ErrorBoundary>
+  )
+}

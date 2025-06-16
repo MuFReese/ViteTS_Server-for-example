@@ -4,7 +4,7 @@ exports.validateForm = void 0;
 const zod_1 = require("zod");
 const formSchema = zod_1.z.object({
     email: zod_1.z.string().email('Некорректный емаил'),
-    message: zod_1.z.string().min(5, 'Сообщение должно содеражть минимум 5 символов')
+    // message: z.string().min(5, 'Сообщение должно содеражть минимум 5 символов')
 });
 const validateForm = (req, res, next) => {
     try {

@@ -3,10 +3,6 @@ interface IOptions {
   width: string
 }
 
-interface IModal {
-  open: () => void
-  close: () => void
-}
 
 interface IValidationInput {
   inputModal: HTMLSelectElement
@@ -17,9 +13,29 @@ interface IValidationInput {
 interface ModalProps {
   isOpen: boolean
   onClose: () => void
-  children: React.ReactNode
+  children?: React.ReactNode
+  width?: string
+  title?: string
 }
 
-type Component = (options: IOptions) => HTMLElement
-type ErrorHandler = (error: Error) => HTMLElement
+interface FormDataModal{
+  email: string
+  message: string
+}
 
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
+  title: string
+  bold?: boolean
+  validForm?: ValidationState
+}
+
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+  label:string
+  validation?: () => void
+  valid?: boolean
+}
+
+interface ValidationState{
+  email?: boolean
+  text?: boolean
+}

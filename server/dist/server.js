@@ -10,7 +10,7 @@ const db_1 = __importDefault(require("./db"));
 const app = (0, express_1.default)();
 const PORT = process.env.PORT || 3001;
 app.use((0, cors_1.default)({
-    origin: ['http://localhost:3000', 'http://example.com'], // Разрешенные домены
+    origin: ['http://localhost:5173', 'http://example.com'], // Разрешенные домены
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Разрешенные HTTP методы
     allowedHeaders: ['Content-Type', 'Authorization'], // Разрешенные заголовки
     optionsSuccessStatus: 200 // Статус успеха для предварительных запросов

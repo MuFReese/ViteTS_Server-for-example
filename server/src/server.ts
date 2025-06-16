@@ -7,7 +7,7 @@ const app = express()
 const PORT = process.env.PORT || 3001
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://example.com'], // Разрешенные домены
+  origin: ['http://localhost:5173', 'http://example.com'], // Разрешенные домены
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Разрешенные HTTP методы
   allowedHeaders: ['Content-Type', 'Authorization'], // Разрешенные заголовки
   optionsSuccessStatus: 200 // Статус успеха для предварительных запросов

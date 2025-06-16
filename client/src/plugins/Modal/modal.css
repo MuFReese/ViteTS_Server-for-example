@@ -79,42 +79,4 @@
   border-bottom: 1px solid #959595;
 }
 
-.modal-main input {
-  padding: 0.5rem 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid black;
-  width: 70%;
-  border-radius: 0.5rem;
-  transition: all 0.2s ease-in-out;
-}
-
-.modal-main input:focus {
-  box-shadow: 0 0 10px black;
-}
-
-.modal-main label {
-  font-size: 1.2rem;
-  margin-bottom: 0.3rem;
-}
-
-.modal-btn{
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  font-size: 1.4rem;
-  font-weight: bold;
-  background-color: black;
-  color: white;
-  transition: all 0.2s;
-  border-radius: 1rem;
-}
-
-.modal-btn:hover{
-  text-shadow: 0 0 2rem white;
-  box-shadow: 0 0 0.5rem rgb(0, 0, 0);
-}
-
-.modal-btn:active{
-  text-shadow: 0 0 2rem white;
-  box-shadow: 0.4rem 0.2rem 0 rgba(0, 0, 0, 0.5);
-}
 
